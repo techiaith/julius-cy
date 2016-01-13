@@ -1,0 +1,98 @@
+% NS_B
+<s>	sil
+
+% NS_E
+</s>	sil
+
+% PERSONA
+MACSEN		m A c s E n
+
+% GAIR_CWESTIWN
+BETH            b E th
+
+% NEWYDDION_RHAGENW_PRESENNOL_YWR
+YW'R		YW r
+
+% NEWYDDION_RHAGENW_PRESENNOL_YDYR
+YDY'R           @ d Y r
+
+% NEWYDDION_GWRTHRYCH
+NEWYDDION	n EW @ dd I O n 
+PENAWDAU	p E n AW d AU
+
+% NEWYDDION_RHAGENW_GORFFENOL
+OEDD 		OE dd
+
+% TYWYDD_RHAGENW_PRESENNOL
+YW              YW
+YW'R		YW r
+YDY'R           @ d Y r
+
+% TYWYDD_RHAGENW_DYFODOL
+FYDD            f @ dd
+
+% TYWYDD_GWRTHRYCH
+TYWYDD          t @W Y dd
+
+% AMSER_HEDDIW
+HEDDIW		h E dd IW
+
+% AMSER_DDOE
+DDOE		dd OE
+
+% AMSER_YFORY
+FORY            f O r Y
+YFORY           @ f O r Y
+
+% FANNOD
+Y               @
+
+% AMSER_GAIR_CWESTIWN
+FAINT           f AI n t
+
+% AMSER_RHAGENW	
+O'R             O r
+
+% AMSER_GWRTHRYCH
+GLOCH		g l O ch
+
+% YDY
+YW		YW
+YDY		@ d Y
+
+% HI_GWAG
+HI		h I
+
+
+% GAIR_GORCHYMYN_CHWARAE_CERDDORIAETH
+CHWARAEA        ch W A r AE A
+
+% GAIR_GORCHYMYN_DISTAW_CERDDORIAETH
+DISTAWA         d I s t A w A 
+
+% GWRTHRYCH_CERDDORIAETH
+GERDDORIAETH    g E r dd O r I AE th
+FIWSIG          f IWX s I g
+
+% ANSODDAIR_CERDDORIAETH
+ARAF            A r A f
+HAPUS           h A p U s
+DAWNSIO         d AW n sh O
+CYMRAEG         c @ m r AE g
+ROC             r O c   
+
+
+% GAIR_GORCHYMYN_DIHAREBION
+RHO             rh O
+DYWEDA          d @ w E d
+
+% GWRTHRYCH_DIHAREBION
+DIHAREB         d I h A r E b 
+
+
+% GAIR_GORCHYMYN_JOCS
+DYWEDA          d @ w E d
+
+% GWRTHRYCH_JOCS
+JÔC            j O c 
+
