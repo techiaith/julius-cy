@@ -1,7 +1,7 @@
 # VoxForge configurations:
 -dfa julius.dfa     					# finite state automaton grammar file
 -v julius.dict      					# pronunciation dictionary
--h /usr/share/julius/acostic/cy/hmmdefs    		# acoustic HMM (ascii or Julius binary)
+-h /usr/share/julius/acoustic/cy/hmmdefs    		# acoustic HMM (ascii or Julius binary)
 -hlist /usr/share/julius/acoustic/cy/tiedlist     	# HMMList to map logical phone to physical
 -smpFreq 48000	    					# sampling rate (Hz)
 -spmodel "sp"	    					# name of a short-pause silence model
