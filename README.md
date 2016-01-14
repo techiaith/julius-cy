@@ -36,7 +36,7 @@ Defnyddiwch y camau canlynol i'w rhoi ar waith o fewn eich amgylchedd:
 $ ./compile.sh
 ```
 
-Bydd y sgript yn rhestru'r brawddegau bydd Julius Cymraeg yn gallu adnabod:
+Bydd y sgript yn rhestru'r brawddegau bydd julius-cy yn gallu adnabod:
 
 ```
 pi@raspberrypi:~/src/julius-cy $ ./compile.sh 
