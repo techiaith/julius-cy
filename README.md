@@ -6,7 +6,18 @@ Adnabod Lleferydd Cymraeg ar gyfer Julius / Welsh Speech Recognition for Julius
 Mae Julius yn feddalwedd adnabod lleferydd LVCSR (large vocabulary speech recognition) cod agored. 
 Yma ceir ffeiliau, sgriptiau yn ogystal a ddogfennaeth ar gyfer ddarparu adnabod lleferydd Cymraeg.
 
-Mae'r project hon yn defnyddio allbynnau o brojectau eraill Uned Technolegau Iaith Prifysgol Bangor, gan gynnwys modelau acwstig â hyfforddwyd gyda'r corpws lleferydd Paldaruo a lecsicon ynganu Cymraeg. 
+Mae'r cyhoeddiad cyntaf o cynnwys y project hon yn alluogi Julius i adnabod cwestiynau a gochmynion syml ynghylch y tywydd, newyddion, amser, cerddoriaeth yn ogystal a ofyn am joc neu ddiharheb Cymraeg. Golygir hyn bod Julius-cy yn gyfyngu'r defnyddiwr i lefaru brawddegau ac eirfa benodol. Bydd fersiynau dyfodol o julius-cy yn ceisio cynorthywo nodweddion arddweud ac adnabod lleferydd fwy rhydd. 
+
+Mae'r julius-cy yn defnyddio adnoddau eraill Uned Technolegau Iaith Prifysgol Bangor er mwyn darparu ddwy elfen bwysig ddefnyddir gan Julius i gynorthywo iaith newydd:
+
+1. modelau acwstig : ffeiliau sy'n cynrychioli sain ffonemau Cymraeg. Rydym wedi eu creu gyda'r meddalwedd safonnol HTK (fersiwn 3.4.1 - http://htk.eng.cam.ac.uk/ ) i hyfforddi gyda recordiadau a chasglwyd drwy ddulliau torfoli'r ap Paldaruo. Defnyddiwch yr ap ar unrhyw ddyfais iOS neu Android er mwyn cyfrannau eich lais chi - http://techiaith.bangor.ac.uk/paldaruo/
+
+2. lecsicon ynghanu : dyma restr o oll eiriau y Gymraeg gyda gwybodaeth ynganu h.y. pa ffonemau mae'r gair yn cynnwys. 
+
+Mae'r ffeiliau modelau acwstig a lecsicon ynganu ar gael o http://techiaith.cymru/htk
+
+Mae'r ffeiliau hyn yn cael eu osod ar eich ran gan y camau nesaf i osod julius-cy ar eich gyfrifiadur.
+
 
 # Gosod yr Amgylchedd Adnabod Lleferydd
 Bydd angen cyfrifiadur Linux fel Ubuntu neu Raspberry Pi ar gyfer y cyfarwyddiadau canlynol.
