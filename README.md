@@ -101,5 +101,22 @@ Stat: init_voca: read 39 words
 no further sentence in the last 300 trial
 ```
 
+# Rhedeg julius-cy
 
+Cysylltwch meicroffôn i'ch cyfrifiadur a rhedwch y rhaglen syml Python canlynol:
+
+```
+$ python julius-cy.py
+```
  
+Llefarwch unrhyw un o'r frawddegau uchod i'r meicroffôn. Dylir testun mae julius-cy yn creu mae wedi ei hadnabod ymddangos ar y sgrîn.
+
+# Rhybudd
+
+Gan nad yw'r modelau acwstig eto ddim cystal, mae'n bosib na fydd julius-cy yn adnabod leisiau rhai unigolion yn lwyddianus. Os nad ydych 
+chi eisoes wedi cyfrannu eich lais i'n Corpws Lleferydd Paldaruo, yna defnyddiwch ein ap 
+([http://techiaith.bangor.ac.uk/paldaruo](http://techiaith.bangor.ac.uk/paldaruo)) ar unrhyw ddyfais iOS neu Android er mwyn i ni 
+gwella'r modelau acwstig gyda'ch lais chi. [Darllenwch y cefndir am ragor](Cefndir.md)
+
+**Diolch yn fawr!!**
+
