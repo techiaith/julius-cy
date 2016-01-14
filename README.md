@@ -3,26 +3,22 @@ Adnabod Lleferydd Cymraeg ar gyfer Julius / Welsh Speech Recognition for Julius
 
 ([Click Here for English README](README_en.md))
 
-Mae Julius yn feddalwedd adnabod lleferydd LVCSR (large vocabulary speech recognition) cod agored. 
-Yma ceir ffeiliau, sgriptiau yn ogystal â dogfennaeth ar gyfer ddarparu adnabod lleferydd Cymraeg.
+Mae Julius yn feddalwedd adnabod lleferydd LVCSR (large vocabulary speech recognition) cod agored. Yma ceir ffeiliau, sgriptiau yn ogystal â dogfennaeth ar gyfer addasu Julius i ddarparu adnabod lleferydd Cymraeg.
 
-Mae'r cyhoeddiad cyntaf o gynnwys y project hwn yn galluogi Julius i adnabod cwestiynau a gorchmynion syml ynghylch y tywydd, newyddion, amser, cerddoriaeth yn ogystal â gofyn am jôc neu ddihareb Cymraeg. Golygir hyn bod Julius-cy yn cyfyngu'r defnyddiwr i lefaru brawddegau a geirfa benodol. Bydd fersiynau dyfodol o julius-cy yn ceisio cynorthwyo nodweddion arddweud ac adnabod lleferydd mwy rhydd. 
+Mae'r rhyddhad cyntaf yn galluogi Julius i adnabod cwestiynau a gorchmynion Cymraeg syml ynghylch y tywydd, newyddion, amser, cerddoriaeth yn ogystal â gofyn am jôc neu ddihareb Cymraeg yn unig. Golygir hyn bod julius-cy yn cyfyngu'r defnyddiwr i lefaru brawddegau a geirfa benodol:
 
-Mae'r julius-cy yn defnyddio adnoddau eraill Uned Technolegau Iaith Prifysgol Bangor er mwyn darparu ddwy elfen bwysig ddefnyddir gan Julius i gynorthwyo iaith newydd:
+e.e. 
 
-1. modelau acwstig : ffeiliau sy'n cynrychioli sain ffonemau Cymraeg. Rydym wedi eu creu gyda'r meddalwedd safonol HTK (fersiwn 3.4.1 - http://htk.eng.cam.ac.uk/ ) i hyfforddi gyda recordiadau a chasglwyd drwy ddulliau torfoli'r ap Paldaruo. Defnyddiwch yr ap ar unrhyw ddyfais iOS neu Android er mwyn cyfrannau eich llais chi - http://techiaith.bangor.ac.uk/paldaruo/
+ - "BETH YDY'R TYWYDD HEDDIW?"
+ - "BETH YW TYWYDD YFORY?"
+ - "BETH YW'R NEWYDDION?"
+ - "FAINT O'R GLOCH YDY HI?"
+ - "CHWARAEA GERDDORIAETH CYMRAEG"
 
-2. Lecsicon ynganu : dyma restr o oll eiriau'r Gymraeg gyda gwybodaeth ynganu h.y. pa ffonemau mae'r gair yn cynnwys. 
+Bydd fersiynau o julius-cy yn y dyfodol yn ceisio cynorthwyo nodweddion arddweud ac adnabod lleferydd mwy rhydd. 
 
-Mae'r ffeiliau modelau acwstig a lecsicon ynganu ar gael o http://techiaith.cymru/htk
-
-Mae'r ffeiliau hyn yn cael eu gosod ar eich rhan gan y camau nesaf i osod julius-cy ar eich cyfrifiadur.
-
-
-# Gosod yr Amgylchedd Adnabod Lleferydd
-Bydd angen cyfrifiadur Linux fel Ubuntu neu Raspberry Pi ar gyfer y cyfarwyddiadau canlynol.
-
-Dylid defnyddio'r camau canlynol i osod adnabod lleferydd Cymraeg Julius ar eich cyfrifiadur: 
+# Gosod julius-cy ar eich gyfrifiadur
+Bydd angen cyfrifiadur gyda system weithredu Linux fel Ubuntu neu Raspberry Pi ar gyfer y cyfarwyddiadau canlynol ar gyfer gosod adnabod lleferydd Cymraeg julius-cy ar eich cyfrifiadur:
 
 ```
 $ git clone https://github.com/techiaith/julius-cy.git
@@ -30,7 +26,31 @@ $ cd julius-cy
 $ ./setup.sh
 ```
 
-Mae'r camau hyn yn gosod Julius ar eich cyfrifiadur yn ogystal â llwytho i lawr a gosod modelau acwstig a'r lecsicon ynganu Cymraeg ar ffurf addas i Julius.
+Bydd y camau hyn yn gosod meddalwedd sylfaenol Julius ar eich cyfrifiadur yn ogystal â llwytho i lawr a gosod y ffeiliau bellach sydd yn ei addasu ar gyfer gynorthwyo’r Gymraeg. 
+
+# Gwybodaeth Cefndir Addasiadau Cymreigio
+
+Mae julius-cy yn defnyddio ddwy elfen gwybodaeth pwysig am y Gymraeg er mwyn darparu adnabod lleferydd Cymraeg, sef modelau acwstig a lecsicon ynganu.
+
+### Modelau acwstig 
+Mae modelau acwstig yn cynrychioli sain ffonemau Cymraeg. Mae julius-cy yn eu defnyddio i geisio adnabod sain y ffonemau mae'n clywed.
+
+Defnyddiwyd Corpws Lleferydd Paldaruo, sef casgliad o recordiadau o siaradwyr yn darllen testunau arbennig am enghreifftiau o sain holl ffonemau'r Gymraeg gan nifer mwyaf o siaradwyr, acenion a gallu Cymraeg. Ddatblygwyd ap ar gyfer ddyfeisiadau iOS ac Android - Paldaruo - er mwyn adeiladu'r corpws drwy ddulliau torfoli. Gweler: http://techiaith.bangor.ac.uk/paldaruo/
+
+Defnyddiwyd y meddalwedd safonol HTK (fersiwn 3.4.1) - gweler http://htk.eng.cam.ac.uk - i brosesu'r recordiadau a hyfforddi'r modelau acwstig Cymraeg. Dewiswyd is-set o'r 36 cyfraniad ansawdd gorau'r Corpws Lleferydd Paldaruo er mwyn hyfforddi modelau acwstig y rhyddhad cyntaf o julius-cy. Llwyddodd y modelau acwstig i gyrraedd cyfradd cywirdeb 92% yn ôl ein profion. 
+
+Yn y cyfamser, defnyddiwch yr ap ar unrhyw ddyfais iOS neu Android er mwyn cyfrannau eich llais chi - yn enwedig os nad yw julius-cy yn gweithio cystal gyda'ch lais. 
+
+
+### Lecsicon ynganu
+Dyma restr o oll eiriau'r Gymraeg gyda gwybodaeth ynganu h.y. pa ffonemau mae'r gair yn cynnwys.  Dyma enghraifft o'i gynnwys:
+
+.....
+
+Mae julius-cy yn defnyddio lecsicon i allu cymharu'r ffonemau mae wedi eu clywed a chanfod y gair union neu agosaf er mwyn ei ddangos i'r defnyddiwr. 
+
+Yn ogystal o fewn julius-cy, mae'r modelau acwstig a'r lecsicon ynganu ar gael o http://techiaith.cymru/htk
+
 
 # Adnabod Cwestiynau a Gorchmynion Cymraeg
 
