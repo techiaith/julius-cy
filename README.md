@@ -28,7 +28,7 @@ $ ./setup.sh
 
 Bydd y camau hyn yn gosod meddalwedd sylfaenol Julius ar eich cyfrifiadur yn ogystal â llwytho i lawr a gosod y ffeiliau bellach sydd yn ei addasu ar gyfer gynorthwyo’r Gymraeg. 
 
-# Gwybodaeth Cefndir Addasiadau Cymreigio
+# Cefndir 
 
 Mae julius-cy yn defnyddio ddwy elfen gwybodaeth pwysig am y Gymraeg er mwyn darparu adnabod lleferydd Cymraeg, sef modelau acwstig a lecsicon ynganu.
 
@@ -40,7 +40,6 @@ Defnyddiwyd Corpws Lleferydd Paldaruo, sef casgliad o recordiadau o siaradwyr yn
 Defnyddiwyd y meddalwedd safonol HTK (fersiwn 3.4.1) - gweler http://htk.eng.cam.ac.uk - i brosesu'r recordiadau a hyfforddi'r modelau acwstig Cymraeg. Dewiswyd is-set o'r 36 cyfraniad ansawdd gorau'r Corpws Lleferydd Paldaruo er mwyn hyfforddi modelau acwstig y rhyddhad cyntaf o julius-cy. Llwyddodd y modelau acwstig i gyrraedd cyfradd cywirdeb 92% yn ôl ein profion. 
 
 Yn y cyfamser, defnyddiwch yr ap ar unrhyw ddyfais iOS neu Android er mwyn cyfrannau eich llais chi - yn enwedig os nad yw julius-cy yn gweithio cystal gyda'ch lais. 
-
 
 ### Lecsicon ynganu
 Dyma restr o oll eiriau'r Gymraeg gyda gwybodaeth ynganu h.y. pa ffonemau mae'r gair yn cynnwys.  Dyma enghraifft o'i gynnwys:
@@ -54,7 +53,19 @@ Yn ogystal o fewn julius-cy, mae'r modelau acwstig a'r lecsicon ynganu ar gael o
 
 # Adnabod Cwestiynau a Gorchmynion Cymraeg
 
-Mae'r ffeiliau `julius.grammar` a `julius.voca` yn cynnwys gwybodaeth am yr eirfa a chystrawen syml defnyddir gan Julius i hwyluso adnabod cwestiynau a gorchmynion ynghylch y tywydd, amser, newyddion, cerddoriaeth, diarhebion a jôcs.
+Mae'r eirfa a'r fath o frawddegau mae'r rhyddhad cyntaf o julius-cy yn eu hadnabod wedi eu manylu yn y ffeiliau `julius.grammar` a `julius.voca`.
+
+Mae `julius.voca` yn cynnwys gwybodaeth am y eirfa dylid julius-cy adnabod. Mae pob un air â wybodaeth ynganu (o'r lecsicon ynganu) a chategori. e.e. 
+
+...
+
+Defnyddir y categoriau'r ffeil julius.voca gan y ffeil gramadeg - `julius.grammar` - er mwyn manylu adnabod cystrawen brawddegau dylid julius-cy adnabod e.e.:
+
+....
+
+Mae'r rhyddhad cyntaf o julius-cy yn gallu adnabod cwestiynau a gorchmynion syml ynghylch y tywydd, amser, newyddion, cerddoriaeth, diarhebion a jôcs.
+
+# Rhoi a'r waith
 
 Defnyddiwch y camau canlynol i'w rhoi ar waith o fewn eich amgylchedd:
 
