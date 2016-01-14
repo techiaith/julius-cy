@@ -114,7 +114,7 @@ Llefarwch unrhyw un o'r brawddegau uchod i'r meicroffon. Dylai'r testun mae juli
 
 # Rhybudd
 
-Gan nad yw'r modelau acwstig eto ddim cystal, mae'n bosib na fydd julius-cy yn adnabod lleisiau rhai unigolion yn llwyddiannus. Os nad ydych chi eisoes wedi cyfrannu eich llais i'n Corpws Lleferydd Paldaruo, yna defnyddiwch ein ap ([http://techiaith.bangor.ac.uk/paldaruo](http://techiaith.bangor.ac.uk/paldaruo)) ar unrhyw ddyfais iOS neu Android er mwyn i ni  wella'r modelau acwstig gyda'ch llais chi. [Darllenwch y cefndir am ragor](Cefndir.md)
+Gan nad yw'r modelau acwstig eto ddim cystal, mae'n bosib na fydd julius-cy yn adnabod lleisiau rhai unigolion yn llwyddiannus. Os nad ydych chi eisoes wedi cyfrannu eich llais i'n Corpws Lleferydd Paldaruo, yna defnyddiwch ein ap ([http://techiaith.bangor.ac.uk/paldaruo](http://techiaith.bangor.ac.uk/paldaruo)) ar unrhyw ddyfais iOS neu Android er mwyn i ni  wella'r modelau acwstig gyda'ch llais chi. [Darllenwch y cefndir am ragor](CEFNDIR.md)
 
 **Diolch yn fawr!!**
 
