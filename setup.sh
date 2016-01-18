@@ -2,7 +2,7 @@
 mkdir -p $HOME/src
 
 cd $HOME/src
-sudo apt-get install -y cvs build-essential zlib1g-dev flex libasound2-dev libesd0-dev libsndfile1-dev
+sudo apt-get install -y cvs build-essential alsa-tools alsa-oss zlib1g-dev flex libc-bin libc-dev-bin python-expect libasound2 libasound2-dev libesd0-dev libsndfile1-dev
 cvs -z3 -d:pserver:anonymous@cvs.sourceforge.jp:/cvsroot/julius co julius4
 cd -
 
@@ -10,11 +10,8 @@ cd $HOME/src/julius4
 if grep -q BCM /proc/cpuinfo; then
 	echo "Raspberry Pi"
 	export CFLAGS="-O2 -mcpu=arm1176jzf-s -mfpu=vfp -mfloat-abi=hard -pipe -fomit-frame-pointer"
-	export ALSADEV="plughw:1,0"
-	./configure --with-mictype=alsa
-else
-	./configure 
 fi
+./configure 
 make
 sudo make install
 cd -
