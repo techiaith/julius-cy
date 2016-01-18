@@ -4,11 +4,17 @@ mkdir -p $HOME/src
 cd $HOME/src
 sudo apt-get install -y cvs build-essential zlib1g-dev flex libasound2-dev libesd0-dev libsndfile1-dev
 cvs -z3 -d:pserver:anonymous@cvs.sourceforge.jp:/cvsroot/julius co julius4
-#export CFLAGS="-O2 -mcpu=arm1176jzf-s -mfpu=vfp -mfloat-abi=hard -pipe -fomit-frame-pointer"
 cd -
 
 cd $HOME/src/julius4
-./configure --enable-words-int
+if grep -q BCM /proc/cpuinfo; then
+	echo "Raspberry Pi"
+	export CFLAGS="-O2 -mcpu=arm1176jzf-s -mfpu=vfp -mfloat-abi=hard -pipe -fomit-frame-pointer"
+	export ALSADEV="plughw:1,0"
+	./configure --with-mictype=alsa
+else
+	./configure 
+fi
 make
 sudo make install
 cd -
