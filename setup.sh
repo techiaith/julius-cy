@@ -2,7 +2,7 @@
 mkdir -p $HOME/src
 
 cd $HOME/src
-sudo apt-get install -y cvs build-essential alsa-tools alsa-oss zlib1g-dev flex libc-bin libc-dev-bin python-expect libasound2 libasound2-dev libesd0-dev libsndfile1-dev
+sudo apt-get install -y cvs build-essential alsa-tools alsa-oss zlib1g-dev flex libc-bin libc-dev-bin python-pexpect libasound2 libasound2-dev libesd0-dev libsndfile1-dev
 cvs -z3 -d:pserver:anonymous@cvs.sourceforge.jp:/cvsroot/julius co julius4
 cd -
 
