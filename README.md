@@ -3,9 +3,9 @@ Adnabod Lleferydd Cymraeg ar gyfer Julius / Welsh Speech Recognition for Julius
 
 ([Click Here for English README](README_en.md))
 
-Mae Julius yn feddalwedd adnabod lleferydd LVCSR (large vocabulary speech recognition) cod agored. Yma ceir ffeiliau, sgriptiau yn ogystal â dogfennaeth ar gyfer addasu Julius i ddarparu adnabod lleferydd Cymraeg.
+Mae Julius yn feddalwedd adnabod lleferydd LVCSR (large vocabulary speech recognition) cod agored. Yma ceir ffeiliau a sgriptiau yn ogystal â dogfennaeth ar gyfer addasu Julius i ddarparu adnabod lleferydd Cymraeg.
 
-Mae'r rhyddhad cyntaf yn galluogi Julius i adnabod cwestiynau a gorchmynion Cymraeg syml ynghylch y tywydd, newyddion, amser, cerddoriaeth yn ogystal â gofyn am jôc neu ddihareb Cymraeg yn unig. Golygir hyn bod julius-cy yn cyfyngu'r defnyddiwr i lefaru brawddegau a geirfa benodol:
+Mae'r fersiwn cyntaf i'w ryddhau yn galluogi Julius i adnabod cwestiynau a gorchmynion Cymraeg syml ynghylch y tywydd, newyddion, amser, cerddoriaeth yn ogystal â gofyn am jôc neu ddihareb Cymraeg yn unig. Golyga hyn bod julius-cy yn cyfyngu'r defnyddiwr i lefaru brawddegau a geirfa benodol:
 
 e.e. 
 
@@ -26,7 +26,7 @@ $ cd julius-cy
 $ ./setup.sh
 ```
 
-Bydd y camau hyn yn gosod meddalwedd sylfaenol Julius ar eich cyfrifiadur yn ogystal â llwytho i lawr a gosod y ffeiliau bellach sydd yn ei addasu ar gyfer gynorthwyo’r Gymraeg. 
+Bydd y camau hyn yn gosod meddalwedd sylfaenol Julius ar eich cyfrifiadur yn ogystal â llwytho i lawr a gosod y ffeiliau pellach sydd yn ei addasu ar gyfer cynorthwyo’r Gymraeg. 
 
 # Cychwyn julius-cy
 
@@ -36,7 +36,7 @@ Defnyddiwch y camau canlynol i'w rhoi ar waith o fewn eich amgylchedd:
 $ ./compile.sh
 ```
 
-Bydd y sgript yn rhestru'r brawddegau bydd julius-cy yn gallu adnabod:
+Bydd y sgript yn rhestru'r brawddegau y bydd julius-cy yn gallu'u hadnabod:
 
 ```
 pi@raspberrypi:~/src/julius-cy $ ./compile.sh 
@@ -103,18 +103,18 @@ no further sentence in the last 300 trial
 
 # Rhedeg julius-cy
 
-Cysylltwch meicroffôn i'ch cyfrifiadur a rhedwch y rhaglen syml Python canlynol:
+Cysylltwch feicroffon i'ch cyfrifiadur a rhedwch y rhaglen syml Python ganlynol:
 
 ```
 $ python julius-cy.py
 ```
  
-Llefarwch unrhyw un o'r brawddegau uchod i'r meicroffon. Dylai'r testun mae julius-cy yn ei gredu y mae wedi ei hadnabod ymddangos ar y sgrin.
+Llefarwch unrhyw un o'r brawddegau uchod i'r meicroffon. Dylai'r testun mae julius-cy yn credu ei fod wedi'i adnabod ymddangos ar y sgrin.
 
 
 # Rhybudd
 
-Gan nad yw'r modelau acwstig eto ddim cystal, mae'n bosib na fydd julius-cy yn adnabod lleisiau rhai unigolion yn llwyddiannus. Os nad ydych chi eisoes wedi cyfrannu eich llais i'n Corpws Lleferydd Paldaruo, yna defnyddiwch ein ap ([http://techiaith.bangor.ac.uk/paldaruo](http://techiaith.bangor.ac.uk/paldaruo)) ar unrhyw ddyfais iOS neu Android er mwyn i ni  wella'r modelau acwstig gyda'ch llais chi. [Darllenwch y cefndir am ragor](CEFNDIR.md)
+Gan mae fersiwn cynnar o'r modelau acwstig sydd gennym, mae'n bosib na fydd julius-cy yn adnabod lleisiau rhai unigolion yn llwyddiannus. Os nad ydych chi eisoes wedi cyfrannu eich llais i'n Corpws Lleferydd Paldaruo, yna defnyddiwch ein ap ([http://techiaith.bangor.ac.uk/paldaruo](http://techiaith.bangor.ac.uk/paldaruo)) ar unrhyw ddyfais iOS neu Android er mwyn i ni  wella'r modelau acwstig gyda'ch llais chi. [Darllenwch y cefndir am ragor](CEFNDIR.md)
 
 **Diolch yn fawr!!**
 
