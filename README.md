@@ -20,6 +20,8 @@ Bydd fersiynau o julius-cy yn y dyfodol yn ceisio cynorthwyo nodweddion arddweud
 # Gosod julius-cy ar eich gyfrifiadur
 Bydd angen cyfrifiadur gyda system weithredu Linux fel Ubuntu neu Raspberry Pi ar gyfer y cyfarwyddiadau canlynol ar gyfer gosod adnabod lleferydd Cymraeg julius-cy ar eich cyfrifiadur:
 
+**NODER:** Cewch hefyd gosod julius-cy ar Mac OS X try defnyddio'r sgript setup sydd yn gorffen efo -osx (setup-osx.sh). Cyn rhedeg y sgript yma, mae angen i chi gosod XCode ar eich cyrfifiadur.
+
 ```
 $ git clone https://github.com/techiaith/julius-cy.git
 $ cd julius-cy

@@ -16,12 +16,15 @@ e.g.
 Future versions of julius-cy will attempt to support recognising dictation and more varied speech. 
 
 # Installing julius-cy on your computer
-You will need a computer with a Linux based operating system such as Ubuntu or a Raspberry Pi in order to use the below steps:
+You will need a computer with a Linux based operating system such as Ubuntu or a Raspberry Pi in order to use Macsen.
+To install julius and Macsen, follow the steps below:
+
+**Note:** You can also install Julius on Mac OS X by using the -osx.sh suffixed setup script (setup-osx.sh). Installation on OS X requires you first install XCode
 
 ```
 $ git clone https://github.com/techiaith/julius-cy.git
 $ cd julius-cy
-$ ./setup.sh
+$ ./setup.sh #(or ./setup-osx.sh if on Mac OS X)
 ```
 
 These instructions install not only the Julius software on your computer, but also download all the necessary files that are needed to customize Julius for Welsh.
