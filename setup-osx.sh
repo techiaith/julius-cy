@@ -1,4 +1,4 @@
-#! /usr/bin/bash
+#! /bin/bash
 
 # install homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -20,8 +20,7 @@ fi
 
 source ~/.bashrc
 
-mkvirtualenv julius-cy
-pip install -r requirements.txt
+mkvirtualenv julius-cy && workon julius-cy && pip install -r requirements.txt
 
 
 mkdir -p /usr/local/share/julius/acoustic/cy
