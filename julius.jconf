@@ -23,5 +23,5 @@
 -lv 4000			# level threshold (0-32767)
 
 # comment these out for debugging:
--logfile julius.log
+#-logfile julius.log
 #-quiet

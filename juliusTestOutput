@@ -1,0 +1,475 @@
+STAT: include config: julius.jconf
+STAT: jconf successfully finalized
+STAT: *** loading AM00 _default
+Stat: init_phmm: Reading in HMM definition
+Stat: rdhmmdef: ascii format HMM definition
+Stat: rdhmmdef: limit check passed
+Stat: check_hmm_restriction: an HMM with several arcs from initial state found: "sp"
+Stat: rdhmmdef: this HMM requires multipath handling at decoding
+Stat: rdhmmdef: no <SID> embedded
+Stat: rdhmmdef: assign SID by the order of appearance
+Stat: init_phmm: defined HMMs:  2718
+Stat: init_phmm: loading ascii hmmlist
+Stat: init_phmm: logical names: 19216 in HMMList
+Stat: init_phmm: base phones:    58 used in logical
+Stat: init_phmm: finished reading HMM definitions
+STAT: m_fusion: force multipath HMM handling by user request
+STAT: making pseudo bi/mono-phone for IW-triphone
+Stat: hmm_lookup: 1533 pseudo phones are added to logical HMM list
+STAT: *** AM00 _default loaded
+STAT: *** loading LM00 _default
+STAT: reading [julius.dfa] and [julius.dict]...
+Error: voca_load_htkdict: line 39: triphone "*-dz+O" or biphone "dz+O" not found
+Error: voca_load_htkdict: line 39: triphone "dz-O+c" not found
+Error: voca_load_htkdict: the line content was: 27	[JÔC]	dz O c
+Error: voca_load_htkdict: begin missing phones
+Error: voca_load_htkdict: *-dz+O or biphone dz+O
+Error: voca_load_htkdict: dz-O+c
+Error: voca_load_htkdict: end missing phones
+Warning: init_voca: the word errors are ignored
+Stat: init_voca: read 38 words
+STAT: done
+STAT: Gram #0 julius registered
+STAT: Gram #0 julius: new grammar loaded, now mash it up for recognition
+STAT: Gram #0 julius: extracting category-pair constraint for the 1st pass
+STAT: Gram #0 julius: installed
+STAT: Gram #0 julius: turn on active
+STAT: grammar update completed
+STAT: *** LM00 _default loaded
+STAT: ------
+STAT: All models are ready, go for final fusion
+STAT: [1] create MFCC extraction instance(s)
+STAT: *** create MFCC calculation modules from AM
+STAT: AM 0 _default: create a new module MFCC01
+STAT: 1 MFCC modules created
+STAT: [2] create recognition processing instance(s) with AM and LM
+STAT: composing recognizer instance SR00 _default (AM00 _default, LM00 _default)
+STAT: Building HMM lexicon tree
+WARNING: IW-triphone for word end "YW+t" not found, fallback to pseudo {YW}
+WARNING: IW-triphone for word end "@-dd+t" not found, fallback to pseudo {@-dd}
+WARNING: IW-triphone for word end "YW+h" not found, fallback to pseudo {YW}
+WARNING: wchmm: no lcdset found for [@-dd::0009], fallback to [@-dd]
+WARNING: wchmm: no lcdset found for [d-A::0026], fallback to [d-A]
+STAT: lexicon size: 558 nodes
+STAT: coordination check passed
+STAT: multi-gram: beam width set to 200 (guess) by lexicon change
+STAT: wchmm (re)build completed
+STAT: SR00 _default composed
+STAT: [3] initialize for acoustic HMM calculation
+Stat: outprob_init: state-level mixture PDFs, use calc_mix()
+Stat: addlog: generating addlog table (size = 1953 kB)
+Stat: addlog: addlog table generated
+STAT: [4] prepare MFCC storage(s)
+STAT: All init successfully done
+
+STAT: ###### initialize input device
+----------------------- System Information begin ---------------------
+JuliusLib rev.4.3.1 (fast)
+
+Engine specification:
+ -  Base setup   : fast
+ -  Supported LM : DFA, N-gram, Word
+ -  Extension    :
+ -  Compiled by  : gcc -O6 -fomit-frame-pointer
+
+------------------------------------------------------------
+Configuration of Modules
+
+ Number of defined modules: AM=1, LM=1, SR=1
+
+ Acoustic Model (with input parameter spec.):
+ - AM00 "_default"
+	hmmfilename=/usr/share/julius/acoustic/cy/hmmdefs
+	hmmmapfilename=/usr/share/julius/acoustic/cy/tiedlist
+
+ Language Model:
+ - LM00 "_default"
+	grammar #1:
+	    dfa  = julius.dfa
+	    dict = julius.dict
+
+ Recognizer:
+ - SR00 "_default" (AM00, LM00)
+
+------------------------------------------------------------
+Speech Analysis Module(s)
+
+[MFCC01]  for [AM00 _default]
+
+ Acoustic analysis condition:
+	       parameter = MFCC_0_D_N_Z (25 dim. from 12 cepstrum + c0, abs energy supressed with CMN)
+	sample frequency = 48000 Hz
+	   sample period =  208  (1 = 100ns)
+	     window size =  400 samples (8.3 ms)
+	     frame shift =  160 samples (3.3 ms)
+	    pre-emphasis = 0.97
+	    # filterbank = 24
+	   cepst. lifter = 22
+	      raw energy = False
+	energy normalize = False
+	    delta window = 2 frames (6.7 ms) around
+	     hi freq cut = OFF
+	     lo freq cut = OFF
+	 zero mean frame = OFF
+	       use power = OFF
+	             CVN = OFF
+	            VTLN = OFF
+
+    spectral subtraction = off
+
+ cep. mean normalization = yes, with per-utterance self mean
+ cep. var. normalization = no
+
+	 base setup from = Julius defaults
+
+------------------------------------------------------------
+Acoustic Model(s)
+
+[AM00 "_default"]
+
+ HMM Info:
+    2718 models, 1203 states, 1203 mpdfs, 1203 Gaussians are defined
+	      model type = context dependency handling ON
+      training parameter = MFCC_N_D_Z_0
+	   vector length = 25
+	number of stream = 1
+	     stream info = [0-24]
+	cov. matrix type = DIAGC
+	   duration type = NULLD
+	max mixture size = 1 Gaussians
+     max length of model = 5 states
+     logical base phones = 58
+       model skip trans. = exist, require multi-path handling
+      skippable models = sp (1 model(s))
+
+ AM Parameters:
+        Gaussian pruning = safe  (-gprune)
+  top N mixtures to calc = 2 / 0  (-tmix)
+    short pause HMM name = "sp" specified, "sp" applied (physical)  (-sp)
+  cross-word CD on pass1 = handle by approx. (use max. prob. of same LC)
+   sp transition penalty = -70.0
+
+------------------------------------------------------------
+Language Model(s)
+
+[LM00 "_default"] type=grammar
+
+ DFA grammar info:
+      22 nodes, 35 arcs, 28 terminal(category) symbols
+      category-pair matrix: 176 bytes (2848 bytes allocated)
+
+ Vocabulary Info:
+        vocabulary size  = 38 words, 148 models
+        average word len = 3.9 models, 11.7 states
+       maximum state num = 27 nodes per word
+       transparent words = not exist
+       words under class = not exist
+
+ Parameters:
+   found sp category IDs =
+
+------------------------------------------------------------
+Recognizer(s)
+
+[SR00 "_default"]  AM00 "_default"  +  LM00 "_default"
+
+ Lexicon tree:
+	 total node num =    558
+	  root node num =     38
+	  leaf node num =     38
+
+	(-penalty1) IW penalty1 = +5.0
+	(-penalty2) IW penalty2 = +20.0
+	(-cmalpha)CM alpha coef = 0.050000
+
+	 inter-word short pause = on (append "sp" for each word tail)
+	  sp transition penalty = -70.0
+ Search parameters: 
+	    multi-path handling = yes, multi-path mode enabled
+	(-b) trellis beam width = 200 (-1 or not specified - guessed)
+	(-bs)score pruning thres= disabled
+	(-n)search candidate num= 1
+	(-s)  search stack size = 500
+	(-m)    search overflow = after 2000 hypothesis poped
+	        2nd pass method = searching sentence, generating N-best
+	(-b2)  pass2 beam width = 200
+	(-lookuprange)lookup range= 5  (tm-5 <= t <tm+5)
+	(-sb)2nd scan beamthres = 200.0 (in logscore)
+	(-n)        search till = 1 candidates found
+	(-output)    and output = 1 candidates out of above
+	 IWCD handling:
+	   1st pass: approximation (use max. prob. of same LC)
+	   2nd pass: loose (apply when hypo. is popped and scanned)
+	 all possible words will be expanded in 2nd pass
+	 build_wchmm2() used
+	 lcdset limited by word-pair constraint
+	short pause segmentation = off
+	fall back on search fail = off, returns search failure
+
+------------------------------------------------------------
+Decoding algorithm:
+
+	1st pass input processing = buffered, batch
+	1st pass method = 1-best approx. generating indexed trellis
+	output word confidence measure based on search-time scores
+
+------------------------------------------------------------
+FrontEnd:
+
+ Input stream:
+	             input type = waveform
+	           input source = waveform file
+	          input filelist = wavlist
+	          sampling freq. = 48000 Hz required
+	         threaded A/D-in = supported, off
+	   zero frames stripping = on
+	         silence cutting = off
+	    long-term DC removal = off
+	    long-term DC removal = off
+	    level scaling factor = 1.00 (disabled)
+	      reject short input = off
+	      reject  long input = off
+
+----------------------- System Information end -----------------------
+
+Notice for feature extraction (01),
+	*************************************************************
+	* Cepstral mean normalization for batch decoding:           *
+	* per-utterance mean will be computed and applied.          *
+	*************************************************************
+
+------
+### read waveform input
+Stat: adin_file: input speechfile: audio_test/001/beth_oedd_penawdau_ddoe.wav
+STAT: 231186 samples (4.82 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> BETH OEDD Y PENAWDAU DDOE </s>
+pass1_best_wordseq: 0 3 7 14 6 12 1
+pass1_best_phonemeseq: sil | b E th | OE dd | @ | p E n AW d AU | dd OE | sil
+pass1_best_score: -35097.351562
+### Recognition: 2nd pass (RL heuristic best-first)
+STAT: 00 _default: 23 generated, 23 pushed, 8 nodes popped in 1443
+sentence1: <s> BETH OEDD PENAWDAU DDOE </s>
+wseq1: 0 3 7 6 12 1
+phseq1: sil | b E th | OE dd | p E n AW d AU | dd OE | sil
+cmscore1: 1.000 1.000 0.000 0.999 1.000 1.000
+score1: -35061.261719
+
+
+------
+### read waveform input
+Stat: adin_file: input speechfile: audio_test/001/beth_ydyr_newyddion.wav
+STAT: 205745 samples (4.29 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> BETH YDY'R NEWYDDION </s>
+pass1_best_wordseq: 0 3 5 6 1
+pass1_best_phonemeseq: sil | b E th | @ d Y r | n EW @ dd I O n | sil
+pass1_best_score: -30007.345703
+### Recognition: 2nd pass (RL heuristic best-first)
+STAT: 00 _default: 20 generated, 20 pushed, 6 nodes popped in 1284
+sentence1: <s> BETH YDY'R NEWYDDION </s>
+wseq1: 0 3 5 6 1
+phseq1: sil | b E th | @ d Y r | n EW @ dd I O n | sil
+cmscore1: 1.000 1.000 1.000 1.000 1.000
+score1: -29967.730469
+
+
+------
+### read waveform input
+Stat: adin_file: input speechfile: audio_test/001/beth_ywr_tywydd_heddiw.wav
+STAT: 232194 samples (4.84 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> BETH YDY'R TYWYDD HEDDIW </s>
+pass1_best_wordseq: 0 3 8 10 11 1
+pass1_best_phonemeseq: sil | b E th | @ d Y r | t @W Y dd | h E dd IW | sil
+pass1_best_score: -34482.613281
+### Recognition: 2nd pass (RL heuristic best-first)
+STAT: 00 _default: 22 generated, 22 pushed, 7 nodes popped in 1449
+sentence1: <s> BETH YDY'R TYWYDD HEDDIW </s>
+wseq1: 0 3 8 10 11 1
+phseq1: sil | b E th | @ d Y r | t @W Y dd | h E dd IW | sil
+cmscore1: 1.000 1.000 1.000 1.000 0.944 1.000
+score1: -34405.410156
+
+
+------
+### read waveform input
+Stat: adin_file: input speechfile: audio_test/001/beth_yw_tywydd_yfory.wav
+STAT: 227874 samples (4.75 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> BETH YW TYWYDD YFORY </s>
+pass1_best_wordseq: 0 3 8 10 13 1
+pass1_best_phonemeseq: sil | b E th | YW | t @W Y dd | @ f O r Y | sil
+pass1_best_score: -33519.621094
+### Recognition: 2nd pass (RL heuristic best-first)
+WARNING: IW-triphone for word end "@-dd+t" not found, fallback to pseudo {@-dd}
+WARNING: IW-triphone for word head "th-YW" not found, fallback to pseudo {YW}
+STAT: 00 _default: 20 generated, 20 pushed, 7 nodes popped in 1422
+sentence1: <s> BETH YW TYWYDD YFORY </s>
+wseq1: 0 3 8 10 13 1
+phseq1: sil | b E th | YW | t @W Y dd | @ f O r Y | sil
+cmscore1: 1.000 1.000 1.000 1.000 1.000 1.000
+score1: -33432.207031
+
+
+------
+### read waveform input
+Stat: adin_file: input speechfile: audio_test/001/chwaraea_fiwsig_cymraeg.wav
+STAT: 181598 samples (3.78 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> CHWARAEA FIWSIG CYMRAEG </s>
+pass1_best_wordseq: 0 20 22 23 1
+pass1_best_phonemeseq: sil | ch W A r AE A | f IW s I g | c @ m r AE g | sil
+pass1_best_score: -28039.613281
+### Recognition: 2nd pass (RL heuristic best-first)
+STAT: 00 _default: 20 generated, 20 pushed, 6 nodes popped in 1133
+sentence1: <s> CHWARAEA FIWSIG CYMRAEG </s>
+wseq1: 0 20 22 23 1
+phseq1: sil | ch W A r AE A | f IW s I g | c @ m r AE g | sil
+cmscore1: 1.000 1.000 1.000 1.000 1.000
+score1: -27989.845703
+
+
+------
+### read waveform input
+Stat: adin_file: input speechfile: audio_test/001/chwaraea_fiwsig.wav
+STAT: 174974 samples (3.65 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> CHWARAEA FIWSIG </s>
+pass1_best_wordseq: 0 20 22 1
+pass1_best_phonemeseq: sil | ch W A r AE A | f IW s I g | sil
+pass1_best_score: -26901.125000
+### Recognition: 2nd pass (RL heuristic best-first)
+STAT: 00 _default: 17 generated, 17 pushed, 5 nodes popped in 1092
+sentence1: <s> CHWARAEA FIWSIG </s>
+wseq1: 0 20 22 1
+phseq1: sil | ch W A r AE A | f IW s I g | sil
+cmscore1: 1.000 1.000 1.000 1.000
+score1: -26857.771484
+
+
+------
+### read waveform input
+Stat: adin_file: input speechfile: audio_test/001/chwaraea_gerddoriaeth_dawnsio.wav
+STAT: 255381 samples (5.32 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> CHWARAEA GERDDORIAETH DAWNSIO </s>
+pass1_best_wordseq: 0 20 22 23 1
+pass1_best_phonemeseq: sil | ch W A r AE A | g E r dd O r I AE th | d AW n sh O | sil
+pass1_best_score: -38237.007812
+### Recognition: 2nd pass (RL heuristic best-first)
+STAT: 00 _default: 21 generated, 21 pushed, 6 nodes popped in 1594
+sentence1: <s> CHWARAEA GERDDORIAETH DAWNSIO </s>
+wseq1: 0 20 22 23 1
+phseq1: sil | ch W A r AE A | g E r dd O r I AE th | d AW n sh O | sil
+cmscore1: 1.000 1.000 1.000 1.000 1.000
+score1: -38283.328125
+
+
+------
+### read waveform input
+Stat: adin_file: input speechfile: audio_test/001/chwaraea_gerddoriaeth.wav
+STAT: 221202 samples (4.61 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> CHWARAEA GERDDORIAETH </s>
+pass1_best_wordseq: 0 20 22 1
+pass1_best_phonemeseq: sil | ch W A r AE A | g E r dd O r I AE th | sil
+pass1_best_score: -32838.429688
+### Recognition: 2nd pass (RL heuristic best-first)
+STAT: 00 _default: 17 generated, 17 pushed, 5 nodes popped in 1381
+sentence1: <s> CHWARAEA GERDDORIAETH </s>
+wseq1: 0 20 22 1
+phseq1: sil | ch W A r AE A | g E r dd O r I AE th | sil
+cmscore1: 1.000 1.000 1.000 1.000
+score1: -32874.402344
+
+
+------
+### read waveform input
+Stat: adin_file: input speechfile: audio_test/001/distawa.wav
+STAT: 170606 samples (3.55 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> DISTAWA </s>
+pass1_best_wordseq: 0 21 1
+pass1_best_phonemeseq: sil | d I s t A w A | sil
+pass1_best_score: -24498.810547
+### Recognition: 2nd pass (RL heuristic best-first)
+STAT: 00 _default: 11 generated, 11 pushed, 4 nodes popped in 1064
+sentence1: <s> DISTAWA </s>
+wseq1: 0 21 1
+phseq1: sil | d I s t A w A | sil
+cmscore1: 1.000 1.000 1.000
+score1: -24453.828125
+
+
+------
+### read waveform input
+Stat: adin_file: input speechfile: audio_test/001/dyweda_joc.wav
+STAT: 177182 samples (3.69 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> BETH YDY'R TYWYDD FORY </s>
+pass1_best_wordseq: 0 3 8 10 13 1
+pass1_best_phonemeseq: sil | b E th | @ d Y r | t @W Y dd | f O r Y | sil
+pass1_best_score: -26935.644531
+### Recognition: 2nd pass (RL heuristic best-first)
+WARNING: IW-triphone for word end "@-dd+t" not found, fallback to pseudo {@-dd}
+STAT: 00 _default: 23 generated, 23 pushed, 7 nodes popped in 1105
+sentence1: <s> BETH YDY'R TYWYDD FORY </s>
+wseq1: 0 3 8 10 13 1
+phseq1: sil | b E th | @ d Y r | t @W Y dd | f O r Y | sil
+cmscore1: 1.000 1.000 0.971 1.000 0.801 1.000
+score1: -26845.884766
+
+
+------
+### read waveform input
+Stat: adin_file: input speechfile: audio_test/001/faint_or_gloch_yw_hi.wav
+STAT: 225666 samples (4.70 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> BETH OEDD Y PENAWDAU </s>
+pass1_best_wordseq: 0 3 7 14 6 1
+pass1_best_phonemeseq: sil | b E th | OE dd | @ | p E n AW d AU | sil
+pass1_best_score: -33875.460938
+### Recognition: 2nd pass (RL heuristic best-first)
+STAT: 00 _default: 23 generated, 23 pushed, 9 nodes popped in 1408
+sentence1: <s> FAINT O'R GLOCH YW HI </s>
+wseq1: 0 15 16 17 18 19 1
+phseq1: sil | f AI n t | O r | g l O ch | YW | h I | sil
+cmscore1: 1.000 1.000 1.000 1.000 1.000 0.095 1.000
+score1: -33806.449219
+
+
+------
+### read waveform input
+Stat: adin_file: input speechfile: audio_test/001/rho_dihareb.wav
+STAT: 192640 samples (4.01 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> RHO DIHAREB </s>
+pass1_best_wordseq: 0 24 25 1
+pass1_best_phonemeseq: sil | rh O | d I h A r E b | sil
+pass1_best_score: -28439.574219
+### Recognition: 2nd pass (RL heuristic best-first)
+STAT: 00 _default: 15 generated, 15 pushed, 5 nodes popped in 1202
+sentence1: <s> RHO DIHAREB </s>
+wseq1: 0 24 25 1
+phseq1: sil | rh O | d I h A r E b | sil
+cmscore1: 1.000 1.000 1.000 1.000
+score1: -28379.501953
+
+
+------
+### read waveform input
+Error: adin_file: failed to open audio_test/001/wavlist
+Error: adin_file: failed to read speech data: "audio_test/001/wavlist"
