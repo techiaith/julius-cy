@@ -7,6 +7,8 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew update
 brew install julius
 
+# use custom python
+brew install python
 
 # install virtualenv
 pip install virtualenvwrapper
@@ -25,12 +27,12 @@ mkvirtualenv julius-cy && workon julius-cy && pip install -r requirements.txt
 
 mkdir -p /usr/local/share/julius/acoustic/cy
 cd /usr/local/share/julius/acoustic/cy
-wget --progress=dot:mega -O - http://techiaith.cymru/htk/paldaruo-2016-01-07.tar.gz | tar -zxf -
+curl -# --url http://techiaith.cymru/htk/paldaruo-2016-01-07.tar.gz | tar -zxf -
 cd -
 
 mkdir -p /usr/local/share/julius/lexicon/cy
 cd /usr/local/share/julius/lexicon/cy
-wget --progress=dot:mega -O lexicon.tgz - http://techiaith.cymru/htk/lexicon-2016-01-07.tar.gz
+curl -# -o lexicon.tgz --url http://techiaith.cymru/htk/lexicon-2016-01-07.tar.gz
 cd -
 
 # Homebrew doesn't install mkdfa.pl. Install manually
