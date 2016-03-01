@@ -7,7 +7,10 @@ cvs -z3 -d:pserver:anonymous@cvs.sourceforge.jp:/cvsroot/julius co julius4
 cd -
 
 cd $HOME/src/julius4
-./configure
+echo "Raspberry Pi"
+export CFLAGS="-O2 -mcpu=arm1176jzf-s -mfpu=vfp -mfloat-abi=hard -pipe -fomit-frame-pointer"
+export ALSADEV="plughw:1,0"
+./configure --with-mictype=alsa
 sudo make
 sudo make install
 cd -
