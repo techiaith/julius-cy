@@ -1,0 +1,30 @@
+# VoxForge configurations:
+-v /usr/share/julius/languagemodels/cy/lexicon
+-d /usr/share/julius/languagemodels/cy/CofnodYCynulliad.cy.julius.lm #N-gram in Julius format
+#-nlr ngram                                              # forward (left to right) N-gram
+-silhead "<s>"                                          # beginning pf sentence (silence) word
+-siltail "</s>"                                         # end of sentence (silence) word
+-mapunk "<UNK>"						# word to which unknown words will be mapped
+
+-h /usr/share/julius/acoustic/cy/hmmdefs    		# acoustic HMM (ascii or Julius binary)
+-hlist /usr/share/julius/acoustic/cy/tiedlist     	# HMMList to map logical phone to physical
+-smpFreq 48000	    					# sampling rate (Hz)
+-spmodel "sp"	    					# name of a short-pause silence model
+-multipath          					# force enable MULTI-PATH model handling
+-gprune safe        					# Gaussian pruning method
+-iwcd1 max          					# Inter-word triphone approximation method
+-iwsppenalty -70.0  					# transition penalty for the appended sp models
+-iwsp	            					# append a skippable sp model at all word ends
+-b2 200             					# beam width on 2nd pass (#words)
+-sb 200.0	    					# score beam envelope threshold
+-n 1                					# num of sentences to find
+
+-forcedict
+
+# you may need to adjust your "-lv" value to prevent the recognizer inadvertently 
+# recognizing non-speech sounds:
+-lv 4000			# level threshold (0-32767)
+
+# comment these out for debugging:
+-logfile julius.log
+#-quiet
