@@ -14,7 +14,7 @@ cd -
 
 sudo mkdir -p /usr/share/julius/acoustic/cy
 cd /usr/share/julius/acoustic/cy
-wget --progress=dot:mega -O - http://techiaith.cymru/htk/paldaruo-2016-03-15.tar.gz | sudo tar -zxf -
+wget --progress=dot:mega -O - http://techiaith.cymru/htk/paldaruo-2016-07-22.tar.gz | sudo tar -zxf -
 cd -
 
 sudo mkdir -p /usr/share/julius/lexicon/cy
