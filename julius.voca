@@ -6,6 +6,7 @@
 
 % PERSONA
 MACSEN		m A c s E n
+LLYWYDD		ll @W Y dd 
 
 % GAIR_CWESTIWN
 BETH            b E th
@@ -33,6 +34,19 @@ FYDD            f @ dd
 
 % TYWYDD_GWRTHRYCH
 TYWYDD          t @W Y dd
+
+% CYNULLIAD_GWRTHRYCH
+CYNULLIAD       c @ n U ll I A d
+
+% SENEDD_GWRTHRYCH
+SENEDD          s E n E dd
+
+% LLYWODRAETH_GWRTHRYCH_1
+LLYWODRAETH   ll @ w O d r AE th 
+
+% LLYWODRAETH_GWRTHRYCH_2
+CYMRU   c @ m r U
+
 
 % AMSER_HEDDIW
 HEDDIW		h E dd IW
