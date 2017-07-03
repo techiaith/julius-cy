@@ -3,7 +3,7 @@
 -v julius.dict      					# pronunciation dictionary
 -h /usr/share/julius/acoustic/cy/hmmdefs    		# acoustic HMM (ascii or Julius binary)
 -hlist /usr/share/julius/acoustic/cy/tiedlist     	# HMMList to map logical phone to physical
--smpFreq 48000	    					# sampling rate (Hz)
+-smpFreq 16000	    					# sampling rate (Hz)
 -spmodel "sp"	    					# name of a short-pause silence model
 -multipath          					# force enable MULTI-PATH model handling
 -gprune safe        					# Gaussian pruning method
