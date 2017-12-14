@@ -18,12 +18,12 @@ cd -
 
 sudo mkdir -p /usr/share/julius/acoustic/cy
 cd /usr/share/julius/acoustic/cy
-wget --progress=dot:mega -O - http://techiaith.cymru/htk/paldaruo-16kHz-2017-07-03.tar.gz | sudo tar -zxf -
+wget --progress=dot:mega -O - http://techiaith.cymru/htk/paldaruo-16kHz-2017-12-08.tar.gz | sudo tar -zxf -
 cd -
 
 sudo mkdir -p /usr/share/julius/lexicon/cy
 cd /usr/share/julius/lexicon/cy
-sudo wget --progress=dot:mega -O lexicon.tgz - http://techiaith.cymru/htk/lexicon-2017-07-03.tar.gz 
+sudo wget --progress=dot:mega -O lexicon.tgz - http://techiaith.cymru/htk/lexicon-2017-12-08.tar.gz 
 cd -
 
 sudo mkdir -p /usr/share/julius/languagemodels/cy
