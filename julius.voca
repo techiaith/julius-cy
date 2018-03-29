@@ -1,3 +1,4 @@
+
 % NS_B
 <s>	sil
 
@@ -6,60 +7,8 @@
 
 % PERSONA
 MACSEN		m A c s E n
-LLYWYDD		ll @W Y dd 
-
-% GAIR_CWESTIWN
-BETH            b E th
-
-% NEWYDDION_RHAGENW_PRESENNOL_YWR
-YW'R		YW r
-
-% NEWYDDION_RHAGENW_PRESENNOL_YDYR
-YDY'R           @ d Y r
-
-% NEWYDDION_GWRTHRYCH
-NEWYDDION	n EW @ dd I O n 
-PENAWDAU	p E n AW d AU
-
-% NEWYDDION_RHAGENW_GORFFENOL
-OEDD 		OE dd
-
-% TYWYDD_RHAGENW_PRESENNOL
-YW              YW
-YW'R		YW r
-YDY'R           @ d Y r
-
-% TYWYDD_RHAGENW_DYFODOL
-FYDD            f @ dd
-
-% TYWYDD_GWRTHRYCH
-TYWYDD          t @W Y dd
-
-% CYNULLIAD_GWRTHRYCH
-CYNULLIAD       c @ n U ll I A d
-
-% SENEDD_GWRTHRYCH
-SENEDD          s E n E dd
-
-% LLYWODRAETH_GWRTHRYCH_1
-LLYWODRAETH   ll @ w O d r AE th 
-
-% LLYWODRAETH_GWRTHRYCH_2
-CYMRU   c @ m r U
-
-
-% AMSER_HEDDIW
-HEDDIW		h E dd IW
-
-% AMSER_DDOE
-DDOE		dd OE
-
-% AMSER_YFORY
-FORY            f O r Y
-YFORY           @ f O r Y
-
-% FANNOD
-Y               @
+LLYWYDD     ll @W Y dd
+WICIPEDIA		W I c I p I d I A
 
 % AMSER_GAIR_CWESTIWN
 FAINT           f AI n t
@@ -75,47 +24,484 @@ YW		YW
 YDY		@ d Y
 
 % HI_GWAG
-HI		h I
-
-
-% GAIR_GORCHYMYN_CHWARAE_CERDDORIAETH
-CHWARAEA        ch W A r AE A
-
-% GAIR_GORCHYMYN_DISTAW_CERDDORIAETH
-DISTAWA         d I s t A w A 
-
-% GWRTHRYCH_CERDDORIAETH
-GERDDORIAETH    g E r dd O r I AE th
-FIWSIG          f IW s I g
-
-% ANSODDAIR_CERDDORIAETH
-ARAF            A r A f
-HAPUS           h A p U s
-DAWNSIO         d AW n sh O
-CYMRAEG         c @ m r AE g
-ROC             r O c   
-
-
-% GAIR_GORCHYMYN_DIHAREBION
-RHO             rh O
-DYWEDA          d @ w E d
-
-% GWRTHRYCH_DIHAREBION
-DIHAREB         d I h A r E b 
-
-
-% GAIR_GORCHYMYN_JOCS
-DYWEDA          d @ w E d A
-
-% GWRTHRYCH_JOCS
-JÔC            j O c 
+HI h I
 
 % PWY_GAIR_CWESTIWN
 PWY		p WY
-BETH	 	b E th		
+BETH		b E th		
 
 % PWY_GAIR_WYT
 WYT		WY t
 
 % PWY_GAIR_TI
 TI		t I
+
+% GAIR_GORCHYMYN_JOCS
+DYWEDA          d @ w E d A
+
+% GWRTHRYCH_JOCS
+JÔC            j O c
+
+
+% WHATIS
+BETH_YDY		b E th @ d Y 
+BETH_YW		b E th YW 
+BETH_YW'R		b E th YW r 
+
+
+% WHATWAS
+BETH_OEDD		b E th OE dd 
+
+
+% WHATWILL
+BETH_FYDD		b E th f Y dd 
+
+
+% WHOIS
+PWY_YW		p WY YW 
+PWY_YDY		p WY @ d Y 
+
+
+% WHOWAS
+PWY_OEDD		p WY OE dd 
+
+
+% VERBS
+CHWARAEA		ch W A r AE A 
+RHO		rh O 
+
+
+% WHATIS_SUBJECT
+PAUN		p AU n 
+LLYFR		ll Y f r 
+MABINOGI		m A b I n O g I 
+CLUDIANT		c l U d I A n t 
+ADEN		A d E n 
+CALON		c A l O n 
+CADEIRYDD		c A d EI r Y dd 
+PENSAERNÏAETH		p E n s AE r n I AE th 
+PWYLEG		p WY l E g 
+TYWYDD_HEDDIW		t @W Y dd h E dd IW 
+MAP		m A p 
+SIOCLED		sh O c l E d 
+CYFRAITH_HYWEL_DDA		c @ f r AI th h @ w E l dd A 
+SIWGR		sh W g r 
+CAR		c A r 
+HOLLT_GWENER		h O ll t g W E n E r 
+CYFRAITH		c @ f r AI th 
+HEBRAEG		h E b r AE g 
+ECONOMEG		E c O n O m E g 
+NEWYDDION_HEDDIW		n EW @ dd I O n h E dd IW 
+CYFRIFIADUREG		c @ f r I f I A d U r E g 
+CIPIO_PLENTYN		c I p I O p l E n t Y n 
+GWEFAN		g W E f A n 
+IECHYD		I E ch Y d 
+ARIAN_CYFRED		A r I A n c @ f r E d 
+COFFI		c O ff I 
+MATHEMATEG		m A th E m A t E g 
+CERDDORIAETH		c E r dd O r I AE th 
+CLEFYD_Y_SIWGR		c l E f Y d @ sh W g r 
+CERRYNT_TRYDANOL		c E r r Y n t t r @ d A n O l 
+FFWNG		ff W ng 
+RHYFEL_FIETNAM		rh @ f E l f I E t n A m 
+PEDAIR_CAINC_Y_MABINOGI		p E d AI r c AI n c @ m A b I n O g I 
+CADAIR_YR_EISTEDDFOD_GENEDLAETHOL		c A d AI r @ r EI s t E dd f O d g E n E d l AE th O l 
+TRYSTAN_AC_ESYLLT		t r @ s t A n A c E s Y ll t 
+DYDD_GŴYL_DEWI		d Y dd g W Y l d E w I 
+SBANER		s b A n E r 
+DIRWASGIAD_MAWR		d I r W A s g I A d m AW r 
+DAEARYDDIAETH		d AE A r @ dd I AE th 
+SEICOLEG		s EI c O l E g 
+PÊL_DROED		p E l d r OE d 
+RHYWOGAETH		rh @ w O g AE th 
+METHANOL		m E th A n O l 
+BEIBL		b EI b l 
+BEICHIOGRWYDD		b EI ch I O g r WY dd 
+NADOLIG		n A d O l I g 
+YR_WYDDOR_GYMRAEG		@ r WY dd O r g @ m r AE g 
+PLASTIG		p l A s t I g 
+MEDDALWEDD		m E dd A l W E dd 
+DELWEDD		d E l W E dd 
+MWYALCHEN_Y_MYNYDD		m WY A l ch E n @ m @ n Y dd 
+GWYBODAETH		g w @ b O d AE th 
+PRIODAS		p r I O d A s 
+HINSAWDD		h I n s AW dd 
+CALENDR_GREGORI		c A l E n d r g r E g O r I 
+RHEOLAETH		rh E O l AE th 
+OFFERYN_CERDD		O ff E r Y n c E r dd 
+GWYDDORAU_CYMDEITHAS		g w @ dd O r AU c @ m d EI th A s 
+LLYFR_LLANDAF		ll Y f r ll A n d A f 
+DUR		d U r 
+ARWYNEBEDD		A r WY n E b E dd 
+LLANW		ll A n W 
+CORFF_DYNOL		c O r ff d @ n O l 
+ALWMINIWM		A l W m I n IW m 
+BYWYDEG		b @W @ d E g 
+ISELDIREG		I s E l d I r E g 
+PENAWDAU		p E n AW d AU 
+CYNGRES_YR_UNOL_DALEITHIAU		c @ ng r E s @ r U n O l d A l EI th I AU 
+LLYFRGELL_Y_GYNGRES		ll @ f r g E ll @ g @ ng r E s 
+PASG		p A s g 
+OFN		O f n 
+CALENNIG		c A l E n n I g 
+BLAIDD		b l AI dd 
+IAITH_RHAGLENNU		I AI th rh A g l E n n U 
+ADDYSG		A dd Y s g 
+CARBON		c A r b O n 
+GAELEG_YR_ALBAN		g AE l E g @ r A l b A n 
+CARBON_DEUOCSID		c A r b O n d EU O c s I d 
+TROSIAD		t r O sh A d 
+YMCHWIL		@ m ch W I l 
+BWYD		b WY d 
+SENEDD		s E n E dd 
+PLANHIGYN		p l A nh I g Y n 
+LABEL_RECORDIO		l A b E l r E c O r d I O 
+EIDALEG		EI d A l E g 
+FICER		f I c E r 
+COMED		c O m E d 
+DYDD_LLUN		d Y dd ll U n 
+AWDURDOD		AW d U r d O d 
+DYDD_GWENER		d Y dd g W E n E r 
+TAWEL_NOS		t A w E l n O s 
+DEINTYDDIAETH		d EI n t @ dd I AE th 
+AUR		AU r 
+MEDDYGAETH		m E dd @ g AE th 
+DŴR		d W r 
+NORWYEG		n O r WY E g 
+BWDHAETH		b W d h AE th 
+OCSIGEN		O c s I g E n 
+BARDDONIAETH		b A r dd O n I AE th 
+EISTEDDFOD_GENEDLAETHOL_CYMRU		EI s t E dd f O d g E n E d l AE th O l c @ m r U 
+ECONOMI		E c O n O m I 
+PETROLIWM		p E t r O l IW m 
+NOS_YSTWYLL		n O s @ s t WY ll 
+POBLOGAETH		p O b l O g AE th 
+ANTHEM_GENEDLAETHOL		A n th E m g E n E d l AE th O l 
+LLADIN		ll A d I n 
+GWYDDOR_SEINEGOL_RYNGWLADOL		g w @ dd O r s EI n E g O l r @ ng wl A d O l 
+FFÔN_CLYFAR		ff O n c l @ f A r 
+SAESON		s AE s O n 
+COLUDDION		c O l U dd I O n 
+GWERINIAETH		g W E r I n I AE th 
+Y_CENHEDLOEDD_UNEDIG		@ c E nh E d l OE dd U n E d I g 
+LLOSGFYNYDD		ll O s g f @ n Y dd 
+ESBLYGIAD		E s b l @ g I A d 
+PAPUR_NEWYDD		p A p U r n EW Y dd 
+Y_GWYLL		@ g w Y ll 
+HYDREF		h @ d r E f 
+GWYDDELEG		g w @ dd E l E g 
+CYLCHGRAWN		c @ l ch g r AW n 
+FITAMIN		f I t A m I n 
+SUL_Y_BLODAU		s U l @ b l O d AU 
+CATH		c A th 
+HAWLIAU_DYNOL		h AW l I AU d @ n O l 
+CEMEG		c E m E g 
+CRONFA_DDATA		c r O n f A dd A t A 
+FFARMACOLEG		ff A r m A c O l E g 
+RHAGFYR		rh A g f Y r 
+CRISTNOGAETH		c r I s t n O g AE th 
+IDDEWON		I dd E w O n 
+LERPWL		l E r p W l 
+GWLEIDYDDIAETH		g wl EI d @ dd I AE th 
+DYDD_MAWRTH_YNYD		d Y dd m AW r th @ n Y d 
+IEITHOEDD_CELTAIDD		I EI th OE dd c E l t AI dd 
+ADERYN_MUDOL		A d E r Y n m U d O l 
+GARDD		g A r dd 
+DINAS		d I n A s 
+MAMAL		m A m A l 
+PLANED		p l A n E d 
+YR_EGLWYS_GATHOLIG		@ r E g l WY s g A th O l I g 
+PRIFYSGOL		p r I f @ s g O l 
+PARTH_CYHOEDDUS		p A r th c @ h OE dd U s 
+MALARIA		m A l A r I A 
+DYDD_MAWRTH		d Y dd m AW r th 
+ALMAENEG		A l m AE n E g 
+LLYDAWEG		ll @ d A w E g 
+PRIFDDINAS		p r I f dd I n A s 
+CELFYDDYD		c E l f @ dd Y d 
+PROTEIN		p r O t EI n 
+AMERICANWYR_AFFRICANAIDD		A m E r I c A n w Y r A ff r I c A n AI dd 
+POP_CYMRAEG		p O p c @ m r AE g 
+GOLEUNI		g O l EU n I 
+GEOMETREG		g E O m E t r E g 
+Y_CYFRYNGAU_TORFOL		@ c @ f r @ ng AU t O r f O l 
+DOSBARTHIAD_GWYDDONOL		d O s b A r th I A d g w @ dd O n O l 
+DAEARGRYN		d AE A r g r Y n 
+PÊL_FASGED		p E l f A s g E d 
+HYSBYSEBU		h @ s b @ s E b U 
+CYMDEITHAS		c @ m d EI th A s 
+YMENNYDD		@ m E n n Y dd 
+POBOL_Y_CWM		p O b O l @ c W m 
+BANER_YR_UNOL_DALEITHIAU		b A n E r @ r U n O l d A l EI th I AU 
+CYMRAEG		c @ m r AE g 
+ORGANEB_BYW		O r g A n E b b YW 
+EGNI_SOLAR		E g n I s O l A r 
+GWAITH_Y_MEDDYG		g W AI th @ m E dd Y g 
+DISGYRCHIANT		d I s g @ r ch I A n t 
+URDD_GOBAITH_CYMRU		U r dd g O b AI th c @ m r U 
+PORTIWGALEG		p O r t IW g A l E g 
+BYWYD_CRWYDROL		b @W Y d c r WY d r O l 
+CI		c I 
+DYDD_IAU		d Y dd I AU 
+GWYDDONIAETH_NATURIOL		g w @ dd O n I AE th n A t U r I O l 
+STUMOG		s t U m O g 
+FFRANGEG		ff r A ng E g 
+HAWLFRAINT		h AW l f r AI n t 
+Y_PLYGAIN		@ p l @ g AI n 
+CYMDEITHASEG		c @ m d EI th A s E g 
+PARC_CENEDLAETHOL_ERYRI		p A r c c E n E d l AE th O l E r @ r I 
+FFÔN_SYMUDOL		ff O n s @ m U d O l 
+TYWYDD_FORY		t @W Y dd f O r Y 
+GWLAD		g wl A d 
+GORFFENNAF		g O r ff E n n A f 
+E_BOST		E b O s t 
+ENSYM		E n s Y m 
+TYWYDD_YFORY		t @W Y dd @ f O r Y 
+TWRISTIAETH		t W r I s t I AE th 
+DOLUR_RHYDD		d O l U r rh Y dd 
+AFU		A f U 
+BACTERIA		b A c t E r I A 
+CERDDORIAETH_BOBLOGAIDD		c E r dd O r I AE th b O b l O g AI dd 
+DEALLUSRWYDD_ARTIFFISIAL		d E A ll U s r WY dd A r t I ff I sh A l 
+GWYDDONIAETH		g w @ dd O n I AE th 
+ATMOSFFER_Y_DDAEAR		A t m O s ff E r @ dd AE A r 
+HEDDLU		h E dd l U 
+CYNNWYS_RHYDD		c @ n n WY s rh Y dd 
+NWY		n WY 
+BOD_DYNOL		b O d d @ n O l 
+CALEDWEDD		c A l E d W E dd 
+PROTESTANIAETH		p r O t E s t A n I AE th 
+GWYDDONIADUR		g w @ dd O n I A d U r 
+COMIWNYDDIAETH		c O m IW n @ dd I AE th 
+DYDD_MERCHER		d Y dd m E r ch E r 
+DYDD_CALAN		d Y dd c A l A n 
+LLOEREN		ll OE r E n 
+CYFATHREBU		c @ f A th r E b U 
+HEN_WLAD_FY_NHADAU		h E n wl A d f @ nh A d AU 
+LLYWODRAETH_CYMRU		ll @ w O d r AE th c @ m r U 
+SYSTEM_WEITHREDU		s @ s t E m w EI th r E d U 
+METEL		m E t E l 
+EWRO		EW r O 
+CYMRY		c @ m r Y 
+BYW_CELWYDD		b YW c E l WY dd 
+LLYWODRAETH		ll @ w O d r AE th 
+SAFLE_TREFTADAETH_Y_BYD		s A f l E t r E f t A d AE th @ b Y d 
+CANLLAW_PUM_MUNUD		c A n ll AW p U m m U n U d 
+GWE_FYD_EANG		g W E f Y d E A ng 
+IAITH_SWYDDOGOL		I AI th s WY dd O g O l 
+FFÔN		ff O n 
+CYFANSODDYN_CEMEGOL		c @ f A n s O dd Y n c E m E g O l 
+CYFUNDREFN_IECHYD_Y_BYD		c @ f U n d r E f n I E ch Y d @ b Y d 
+YMARFER_CORFFOROL		@ m A r f E r c O r ff O r O l 
+BUSNES		b U s n E s 
+FFILM		ff I l m 
+CERDDORIAETH_ROC		c E r dd O r I AE th r O c 
+PEIRIANNEG		p EI r I A n n E g 
+ANATOMEG		A n A t O m E g 
+HAEARN		h AE A r n 
+SAESNEG		s AE s n E g 
+SERYDDIAETH		s E r @ dd I AE th 
+DIWRNOD_Y_MEIRW		d IW r n O d @ m EI r W 
+BANC		b A n c 
+FFOTOGRAFFIAETH		ff O t O g r A ff I AE th 
+ARABEG		A r A b E g 
+FFYNHONNAU_MÔN		ff @ nh O n n AU m O n 
+DADENI_DYSG		d A d E n I d Y s g 
+CYFIAWNDER		c @ f I AW n d E r 
+IEITHYDDIAETH		I EI th @ dd I AE th 
+COLUDDYN_BACH		c O l U dd Y n b A ch 
+SBAENEG		s b AE n E g 
+CYNULLIAD		c @ n U ll I A d 
+POCER		p O c E r 
+RHYFELGYRCH_GWŶR_HARLECH		rh @ f E l g Y r ch g W Y r h A r l E ch 
+CANCR		c A n c r 
+PORWR_GWE		p O r W r g W E 
+CLORIN		c l O r I n 
+GÊM		g E m 
+CREFYDD		c r E f Y dd 
+LLENYDDIAETH		ll E n @ dd I AE th 
+SYSTEM_RHEOLI_CYNNWYS		s @ s t E m rh E O l I c @ n n WY s 
+BLWYDDYN		b l WY dd Y n 
+NATSÏAETH		n A ts I AE th 
+DEMOCRATIAETH		d E m O c r A t I AE th 
+CLEFYD		c l E f Y d 
+NEWYDDION		n EW @ dd I O n 
+ARCHAEOLEG		A r ch AE O l E g 
+GWAED		g W AE d 
+PREN		p r E n 
+IAITH		I AI th 
+Y_MÔR_FILWYR_BRENHINOL		@ m O r f I l w Y r b r E nh I n O l 
+DELEDU		d E l E d U 
+IDDEWIAETH		I dd E w I AE th 
+GWRACH		g wr A ch 
+COPR		c O p r 
+BREINLEN		b r EI n l E n 
+ATHRONIAETH		A th r O n I AE th 
+ACTOR		A c t O r 
+HAFAN		h A f A n 
+GLO		g l O 
+LLYFRGELL_Y_DIET_CENEDLAETHOL		ll @ f r g E ll @ d I E t c E n E d l AE th O l 
+DYLUNIO		d @ l U n I O 
+EGLWYS_GROEG		E g l WY s g r OE g 
+PAREDD_GALLU_PRYNU		p A r E dd g A ll U p r @ n U 
+CYFANDIR		c @ f A n d I r 
+CHWARAEON		ch W A r AE O n 
+SIOP		sh O p 
+CYLCHFA_AMSER		c @ l ch f A A m s E r 
+CYMDEITHAS_YR_IAITH		c @ m d EI th A s @ r I AI th 
+CERDDORIAETH_ELECTRONIG		c E r dd O r I AE th E l E c t r O n I g 
+DRAIG		d r AI g 
+DIWYDIANT		d IW @ d I A n t 
+HAUL		h AU l 
+GŴYL_CALAN_GAEAF		g W Y l c A l A n g AE A f 
+YSTADEGAETH		@ s t A d E g AE th 
+LLEW		ll EW 
+DANT		d A n t 
+HINDŴAETH		h I n d W AE th 
+AMSER		A m s E r 
+FFISEG		ff I s E g 
+EISTEDDFOD_GENEDLAETHOL_YR_URDD		EI s t E dd f O d g E n E d l AE th O l @ r U r dd 
+DIOD		d I O d 
+PLA_DU		p l A d U 
+NEWID_HINSAWDD		n E w I d h I n s AW dd 
+Y_FARI_LWYD		@ f A r I l WY d 
+PLAID_CYMRU		p l AI d c @ m r U 
+MEDDYGINIAETH		m E dd @ g I n I AE th 
+DIWYLLIANT		d IW @ ll I A n t 
+RHYNGRWYD		rh @ ng r WY d 
+GWYDDBWYLL		g w @ dd b WY ll 
+DYNEIDDIAETH		d @ n EI dd I AE th 
+AMAETH		A m AE th 
+ANTHROPOLEG		A n th r O p O l E g 
+DYDD_SAN_FFOLANT		d Y dd s A n ff O l A n t 
+MAM		m A m 
+CORON_YR_EISTEDDFOD_GENEDLAETHOL		c O r O n @ r EI s t E dd f O d g E n E d l AE th O l 
+HOFRENNYDD		h O f r E n n Y dd 
+GEMAU_OLYMPAIDD_MODERN		g E m AU O l @ m p AI dd m O d E r n 
+CYFRIFIADUR		c @ f r I f I A d U r 
+ISLAM		I s l A m 
+GENWS		g E n W s 
+SYSTEM_NERFOL		s @ s t E m n E r f O l 
+HANES		h A n E s 
+DWYSEDD_POBLOGAETH		d WY s E dd p O b l O g AE th 
+ARIANNEG		A r I A n n E g 
+ADERYN		A d E r Y n 
+PÊL_DROED_AMERICANAIDD		p E l d r OE d A m E r I c A n AI dd 
+MASNACH		m A s n A ch 
+GROEG		g r OE g 
+PENAWDAU_HEDDIW		p E n AW d AU h E dd IW 
+CASTELL_MWNT_A_BEILI		c A s t E ll m W n t A b EI l I 
+GWASG_PRIFYSGOL_RHYDYCHEN		g W A s g p r I f @ s g O l rh @ d @ ch E n 
+CEFFYL		c E ff Y l 
+EBRILL		E b r I ll 
+GWLADWRIAETH		g wl A d W r I AE th 
+GORDEWDRA		g O r d EW d r A 
+BASGIAID		b A s g I AI d 
+Y_TEBOT_PIWS		@ t E b O t p IW s 
+YSGYFAINT		@ s g @ f AI n t 
+TECHNOLEG_GWYBODAETH		t E ch n O l E g g w @ b O d AE th 
+ÔL_DDODIAD_RHYNGRWYD		O l dd O d I A d rh @ ng r WY d 
+GAMBLO		g A m b l O 
+EGNI_ADNEWYDDADWY		E g n I A d n EW @ dd A d WY 
+TENIS		t E n I s 
+LLYWODRAETH_LEOL_YNG_NGHYMRU		ll @ w O d r AE th l E O l @ ng ngh @ m r U 
+MARCHNATA		m A r ch n A t A 
+ANIFAIL		A n I f AI l 
+TRETH		t r E th 
+CYNHESU_BYD_EANG		c @ nh E s U b Y d E A ng 
+HEN_GALAN		h E n g A l A n 
+COEDWIG_LAW		c OE d W I g l AW 
+TECHNOLEG		t E ch n O l E g 
+IESU		I E s U 
+DE_DDWYRAIN_ASIA		d E dd WY r AI n A sh A 
+METR		m E t @ r 
+ELECTRONEG		E l E c t r O n E g 
+TRYDAN		t r @ d A n 
+CERFLUNIAETH		c E r f l U n I AE th 
+
+
+% WHATWAS_SUBJECT
+YR_OESOEDD_CANOL		@ r OE s OE dd c A n O l 
+Y_RHYFEL_BYD_CYNTAF		@ rh @ f E l b Y d c @ n t A f 
+Y_CELTIAID		@ c E l t I AI d 
+Y_RHYFEL_OER		@ rh @ f E l OE r 
+RHYFEL_CARTREF_AMERICA		rh @ f E l c A r t r E f A m E r I c A 
+Y_PENAWDAU_DDOE		@ p E n AW d AU dd OE 
+NEWYDDION_DDOE		n EW @ dd I O n dd OE 
+CYFNOD_Y_TUDURIAID		c @ f n O d @ t U d U r I AI d 
+PENAWDAU_DDOE		p E n AW d AU dd OE 
+Y_NEWYDDION_DDOE		@ n EW @ dd I O n dd OE 
+YR_AIL_RYFEL_BYD		@ r AI l r @ f E l b Y d 
+BRYTHONIAID		b r @ th O n I AI d 
+Y_CHWYLDRO_DIWYDIANNOL		@ ch w @ l d r O d IW @ d I A n n O l 
+YR_YMERODRAETH_RUFEINIG		@ r @ m E r O d r AE th r U f EI n I g 
+TRYCHINEB_ABERFAN		t r @ ch I n E b A b E r f A n 
+
+
+% WHATWILL_SUBJECT
+TYWYDD_FORY		t @W Y dd f O r Y 
+TYWYDD_YFORY		t @W Y dd @ f O r Y 
+
+
+% WHOIS_SUBJECT
+TUDUR_DYLAN_JONES		t U d U r d @ l A n j O n E s 
+SIÔN_CORN		sh O n c O r n 
+DUW		d UW 
+DAFYDD_IWAN		d A f Y dd I w A n 
+TOM_JONES		t O m j O n E s 
+BOB_DYLAN		b O b d @ l A n 
+CARYL_PARRY_JONES		c A r Y l p A r r Y j O n E s 
+IFAN_HUW_DAFYDD		I f A n h UW d A f Y dd 
+EMYR_WYN		E m Y r WY n 
+DYFAN_REES		d @ f A n r E E s 
+GAYNOR_MORGAN_REES		g A @ n O r m O r g A n r E E s 
+RICHARD_ELFYN		r I ch A r d E l f Y n 
+GERALLT_PENNANT		g E r A ll t p E n n A n t 
+TUDUR_OWEN		t U d U r O w E n 
+MYRDDIN_AP_DAFYDD		m @ r dd I n A p d A f Y dd 
+BRYN_FÔN		b r Y n f O n 
+ARLYWYDD_YR_UNOL_DALEITHIAU		A r l @W Y dd @ r U n O l d A l EI th I AU 
+FFION_DAFIS		ff I O n d A f I s 
+MANON_STEFFAN_ROS		m A n O n s t E ff A n r O s 
+CERI_WYN_JONES		c E r I WY n j O n E s 
+RHYS_IFANS		rh Y s I f A n s 
+HELEDD_CYNWAL		h E l E dd c @ n W A l 
+BETHAN_RHYS_ROBERTS		b E th A n rh Y s r O b E r ts 
+
+
+% WHOWAS_SUBJECT
+GERALLT_LLOYD_OWEN		g E r A ll t ll O Y d O w E n 
+KATE_ROBERTS		A t E r O b E r ts 
+LLYWELYN_AP_GRUFFUDD		ll @ w E l Y n A p g r U ff U dd 
+Y_BRENIN_ARTHUR		@ b r E n I n A r th U r 
+SAUNDERS_LEWIS		s AU n d E r s l E w I s 
+LLYWELYN_FAWR		ll @ w E l Y n f AW r 
+IEUAN_ROBERTS		I EU A n r O b E r ts 
+SANTES_DWYNWEN		s A n t E s d WY n W E n 
+GWYNFOR_EVANS		g w @ n f O r E A n s 
+OWAIN_GLYN_DŴR		O w AI n g l Y n d W r 
+RHODRI_MORGAN		rh O d r I m O r g A n 
+DAFYDD_DAFIS		d A f Y dd d A f I s 
+HEDD_WYN		h E dd WY n 
+IWAN_LLWYD		I w A n ll WY d 
+HARRI_MORGAN		h A r r I m O r g A n 
+DIC_JONES		d I c j O n E s 
+DEWI_SANT		d E w I s A n t 
+SIONED_JAMES		sh O n E d j A m E s 
+
+
+% VERBS_SUBJECT
+GERDDORIAETH_CYMRAEG		g E r dd O r I AE th c @ m r AE g 
+FIWSIG_ARAF		f IW s I g A r A f 
+GERDDORIAETH_ARAF		g E r dd O r I AE th A r A f 
+FIWSIG_ROC		f IW s I g r O c 
+FIWSIG_DAWNSIO		f IW s I g d AW n sh O 
+GERDDORIAETH		g E r dd O r I AE th 
+FIWSIG_CYMRAEG		f IW s I g c @ m r AE g 
+FIWSIG_HAPUS		f IW s I g h A p U s 
+DIHAREB		d I h A r E b 
+FIWSIG		f IW s I g 
+GERDDORIAETH_HAPUS		g E r dd O r I AE th h A p U s 
+GERDDORIAETH_ROC		g E r dd O r I AE th r O c 
+GERDDORIAETH_DAWNSIO		g E r dd O r I AE th d AW n sh O 
+JÔC		j O c 
